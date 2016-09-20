@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Chris' Awesome Blog</title>
+  </head>
+
+  <style type= "text/css">
+    body {
+      font-family: sans-serif;
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .error {
+      color: red
+    }
+
+    label {
+      display: block;
+      font-size: 20px;
+      padding: 2px;
+    }
+
+    textarea {
+      width: 400px;
+      font-size: 17px;
+      font-family: monospace;
+    }
+
+    input[type=submit] {
+      font-size: 24px:
+    }
+
+    hr {
+      margin: 20px auto;
+    }
+
+    .entry = .entry {
+      margin-top: 20px;
+    }
+
+    .entry-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .entry-body {
+      margin: 0;
+      font-size: 17px;
+    }
+  </style>
+
+
+<body>
+  <h1>
+      <a href="/">Chris' Awesome Blog</a>
+  </h1>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Awesome wasn't born here, nor will it die here,<br>
+      but it does like to party here when the mood is ripe.</h3>
+
+    <form method="get" action="/add">
+
+      Would you like to add more awesomeness?
+    <button type="submit">I got some awesome</button>
+    </form>
+
+
+    <hr>
+
+    {% for entry in entries %}
+      <div class="entry">
+        <div class = "entry-title"><a href="/{{entry.key().id()}}">{{entry.title}}</a></div>
+        <br>
+        <pre class = "entry-body">{{entry.entry}}</pre>
+        <br>
+        <br>
+        <hr>
+      </div>
+    {% endfor %}
+
+{% endblock %}

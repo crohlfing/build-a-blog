@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>OH YES! Feed me your awesome!</h3>
+
+    <form method = "post">
+      <label>
+        <div>Awesome Addition Title<div>
+        <input type="text" name="title" value="{{title}}">
+      </label>
+      <label>
+        <div>Awesome Addition</div>
+        <textarea name = "entry">{{entry}}</textarea>
+      </label>
+      <div class="error">{{error}}</div>
+
+      <input type="submit" value="couldn't be more awesome">
+    </form>
+
+{% endblock %}
